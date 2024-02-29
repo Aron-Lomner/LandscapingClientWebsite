@@ -1,0 +1,312 @@
+/* Resets */
+* {
+    margin: 0;
+    font-family: 'Blinker';
+
+    text-align: justify;
+}
+
+/* Website */
+#page {
+
+    width: 100%;
+}
+
+.bg-top-img {
+    width: 100%;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    z-index: -10;
+}
+
+#top {
+    position: relative;
+    backdrop-filter: blur(10px);
+    background-color: #0000003f;
+    z-index: 1;
+}
+
+/* Navbar */
+nav {
+    display: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+nav a {
+    color: lightcyan;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: rgb(63, 255, 137);
+}
+
+#logo {
+    margin-right: auto;
+    margin-left: 2rem;
+    font-size: 2rem;
+}
+
+#logo:hover {
+    text-decoration: none;
+    transform: none;
+}
+
+#contact {
+    margin: 1rem 2rem;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 2vh 2vw;
+}
+
+#contact:hover {
+    backdrop-filter: blur(20px);
+    background-color: #0000002f;
+}
+
+
+/* hero section */
+#hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20vh;
+}
+
+#hero h1 {
+    margin: 35vh 3rem 2rem 3rem;
+    font-size: 3rem;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 200;
+    color: rgb(63, 255, 137);
+    text-align: center;
+}
+
+#hero h2 {
+    font-size: 2rem;
+    font-family: 'Rubik';
+    font-weight: 100;
+    color: white;
+    margin: 0 4rem 2rem 4rem;
+    text-align: center;
+}
+
+/* Main */
+#main-container {
+    width: 100%;
+    background: lightgray;
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    width: 80vw;
+    background-color: white;
+    transform: translateY(-10vh);
+    z-index: 10;
+    padding: 2rem;
+    border-radius: 5px;
+}
+
+#main-paragraph {
+    color: gray;
+}
+
+
+/* Service card */
+#service-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 400px) {
+    #logo {
+        font-size: large;
+    }
+
+    #hero h1 {
+        font-size: xx-large;
+    }
+    
+    #hero h2 {
+        font-size: larger;
+    }
+    #main-paragraph{
+        font-size: large;
+    }
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 300px) {
+    #logo {
+        font-size: medium;
+    }
+
+    #hero h1 {
+        font-size: larger;
+    }
+
+    #hero h2 {
+        font-size: medium;
+    }
+
+    #main-paragraph {
+        font-size: medium;
+    }
+}
+
+.card {
+    width: 400px;
+    max-width: 100%;
+    min-height: 200px;
+    border: black 1px solid;
+    padding: 1rem 2rem;
+    margin: 2rem 5px;
+    border-radius: 10px;
+}
+
+
+
+.card div {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.card i {
+    margin-right: 10px;
+}
+
+/* Testimonials */
+#tesimonial-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+
+.testimonial-card {
+    border: 1px solid #ccc;
+    width: 200px;
+    max-width: 90%;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.quote {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.review {
+    font-style: italic;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.name {
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Contact section */
+#contact-section {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 50px;
+}
+
+.contact-info {
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin: 10px 0;
+}
+
+.social-media {
+    margin-top: 20px;
+}
+
+.social-media h2 {
+    margin-bottom: 10px
+}
+
+.social-media a {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 24px;
+}
+
+/* Footer */
+footer {
+    background-color: #4f643e;
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+    justify-content: space-around;
+    text-align: center;
+    color: white;
+}
+
+footer a {
+    color: white;
+    /* text-decoration: none; */
+    font-style: italic;
+}
+
+/* Reusible Classes */
+.btn-primary {
+    font-family: 'Rubik';
+    background-color: white;
+    color: lightslategray;
+    padding: 1rem 2rem;
+    margin: 1rem 2rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: transform ease .3s;
+}
+
+.btn-primary:hover {
+    transform: scale(1.1);
+}
+
+/* Divider */
+.divider {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.divider .line {
+    width: 20vw;
+    height: 1px;
+    background: gray;
+    margin: 0 1rem;
+}
